@@ -8,6 +8,28 @@ Este projeto foca na análise de crédito e segmentação de clientes, aplicando
 2. **Análise de Crédito**: Prever a propensão ao endividamento e identificar clientes de alto risco para reduzir perdas financeiras.
 3. **Visualizações Interativas**: Comunicar os resultados de maneira intuitiva, facilitando a interpretação dos insights por stakeholders.
 
+## Principais Resultados e Impacto na Tomada de Decisão
+
+### 1. Segmentação de Clientes
+**Descrição**: Utilizando a técnica de K-Means Clustering, identificamos três segmentos distintos de clientes com características financeiras e comportamentais específicas.
+- **Resultado**: Cada cluster representa um perfil de cliente baseado em fatores como saldo bancário, idade e duração da campanha.
+- **Impacto na Decisão**: Com a segmentação, a equipe de marketing pode personalizar campanhas para cada grupo, maximizando a eficácia e alocando recursos de forma mais estratégica. Esse insight é essencial para estratégias de retenção de clientes e expansão do relacionamento bancário.
+
+### 2. Predição da Propensão ao Endividamento
+**Descrição**: Foram utilizados modelos de classificação (Random Forest e XGBoost) para prever a probabilidade de endividamento dos clientes.
+- **Resultado**: O modelo XGBoost apresentou um AUC-ROC elevado, indicando uma alta precisão na previsão da probabilidade de endividamento. As variáveis mais influentes foram a duração da campanha e o saldo do cliente.
+- **Impacto na Decisão**: Com a previsão de propensão ao endividamento, a instituição pode identificar clientes de alto risco e implementar políticas de crédito preventivas. Isso ajuda a reduzir perdas e gerenciar o risco de inadimplência, alinhando a concessão de crédito com perfis de risco de forma mais precisa.
+
+### 3. Análise Temporal das Campanhas de Marketing
+**Descrição**: Analisamos a eficácia das campanhas ao longo dos meses, observando padrões sazonais e avaliando a taxa de conversão.
+- **Resultado**: A taxa de conversão foi significativamente maior em certos meses, revelando períodos mais favoráveis para campanhas de marketing.
+- **Impacto na Decisão**: Esses insights temporais permitem que a equipe de marketing ajuste o calendário de campanhas para coincidir com os períodos de maior conversão, otimizando o retorno sobre o investimento em marketing.
+
+### 4. Visualizações Interativas e Interpretação
+**Descrição**: Foram criadas visualizações interativas (usando Plotly e Seaborn) para explorar a segmentação e as probabilidades de endividamento.
+- **Resultado**: As visualizações facilitam a compreensão dos clusters e da distribuição de risco entre os clientes, permitindo que stakeholders compreendam rapidamente os insights principais.
+- **Impacto na Decisão**: A interpretação visual dos dados auxilia na comunicação com a equipe executiva e stakeholders, permitindo decisões informadas baseadas em dados claros e acessíveis.
+
 ## Metodologia
 
 ### 1. Carregamento e Preparação dos Dados
@@ -33,12 +55,6 @@ Este projeto foca na análise de crédito e segmentação de clientes, aplicando
 - Visualizações interativas e tradicionais (scatter plots, gráficos 3D) para comunicar insights dos clusters e probabilidade de endividamento.
 - Heatmap das características médias por cluster, fornecendo uma visão detalhada de cada segmento de cliente.
 
-## Resultados
-
-- **Segmentação de Clientes**: Identificação de perfis distintos de clientes, permitindo ações personalizadas para diferentes grupos.
-- **Modelos Preditivos**: Modelos de machine learning (Random Forest e XGBoost) foram capazes de prever com precisão a probabilidade de endividamento, com alta AUC-ROC.
-- **Insights Visuais**: Visualizações intuitivas da análise de crédito e clusters de clientes, facilitando a compreensão dos dados e a comunicação com stakeholders.
-
 ## Tecnologias Utilizadas
 
 - **Linguagens**: Python
@@ -51,3 +67,4 @@ Este projeto foca na análise de crédito e segmentação de clientes, aplicando
 1. Clone este repositório para o seu ambiente local:
    ```bash
    git clone https://github.com/SEU_USUARIO/Customer_Segmentation_Credit_Analysis.git
+
